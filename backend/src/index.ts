@@ -1,7 +1,30 @@
 import { Elysia } from "elysia";
-import postRoutes from "./routes/posts";
+import postRoutes from "./controllers/postController";
+import { PrismaClient } from "@prisma/client";
+import consola from "consola";
+import swagger from "@elysiajs/swagger";
 
-const app = new Elysia();
+export const prisma = new PrismaClient();
+const app = new Elysia().use(swagger());
+
+initialize();
+
+async function initialize() {
+    await validateDatabaseConnection();
+}
+
+async function validateDatabaseConnection() {
+    try {
+        await prisma.$connect();
+        consola.success("Connected to database");
+        consola.info("Ready to handle requests 🌐");
+    } catch (error) {
+        consola.error("Failed to connect to the database:", error);
+    } finally {
+        await prisma.$disconnect();
+    }
+}
+
 
 app.group("/api", (app) => {
     return app.use(postRoutes);
