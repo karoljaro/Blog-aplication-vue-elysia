@@ -1,0 +1,20 @@
+### Get ALL
+GET http://localhost:3049/api/posts/
+Accept: application/json
+
+### Get By ID
+GET http://localhost:3049/api/posts/1
+Accept: application/json
+
+### Create
+POST http://localhost:3049/api/posts
+Content-Type: application/json
+
+{
+    "title": "Next post ever",
+    "content": "We are on a roll now"
+}
+
+### Update By ID
+PATCH http://localhost:3049/api/posts/1
+Content-Type: application/json
