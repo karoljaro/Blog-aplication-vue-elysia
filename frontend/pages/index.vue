@@ -1,3 +1,5 @@
 <template>
-    <h1 class="text-red-500">Hello World</h1>
+    <div class="container bg-yellow/55">
+        <p>Hello world</p>
+    </div>
 </template>
