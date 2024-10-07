@@ -3,7 +3,7 @@ GET http://localhost:3049/api/posts/
 Accept: application/json
 
 ### Get By ID
-GET http://localhost:3049/api/posts/3
+GET http://localhost:3049/api/posts/9d6a2ba0-4882-4734-86b6-84f5776969e6
 Accept: application/json
 
 ### Create
@@ -16,7 +16,7 @@ Content-Type: application/json
 }
 
 ### Update By ID
-PATCH http://localhost:3049/api/posts/1
+PATCH http://localhost:3049/api/posts/9d6a2ba0-4882-4734-86b6-84f5776969e6
 Content-Type: application/json
 
 {
@@ -29,5 +29,5 @@ DELETE http://localhost:3049/api/posts/
 Content-Type: application/json
 
 {
-    "id": 2
+    "id": "9bd9eeb2-88aa-49cf-aa08-45bfda74b575"
 }
