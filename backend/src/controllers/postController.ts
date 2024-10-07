@@ -5,7 +5,7 @@ const postRoutes = new Elysia({ prefix: "/posts" })
     .get("/", () => getPosts())
     .get("/:id", ({ params: { id } }) => getPostById(id), {
         params: t.Object({
-            id: t.Numeric(),
+            id: t.String(),
         }),
     })
     .post("/", ({ body }) => createPost(body), {
@@ -22,7 +22,7 @@ const postRoutes = new Elysia({ prefix: "/posts" })
     })
     .patch("/:id", ({ params: { id }, body }) => updatePost(id, body), {
         params: t.Object({
-            id: t.Numeric(),
+            id: t.String(),
         }),
         body: t.Object(
             {
@@ -42,7 +42,7 @@ const postRoutes = new Elysia({ prefix: "/posts" })
     })
     .delete("/", ({ body }) => deletePost(body), {
         body: t.Object({
-            id: t.Numeric(),
+            id: t.String(),
         }),
     });
 
