@@ -1,13 +1,8 @@
 <template>
-    <div class="container">
-        <header>
-            eeeee
-        </header>
-        <main>
+    <div>
+        <SharedHeader />
+        <main class="container">
             <slot />
         </main>
-        <footer>
-            footer
-        </footer>
     </div>
 </template>
