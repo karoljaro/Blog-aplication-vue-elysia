@@ -30,6 +30,15 @@ export default <Partial<Config>>{
             }
          },
 
+         screens: {
+            // ultra small phones
+            sm: '390px',
+            // laptops
+            lg: '1440px',
+            // PC
+            xl: '1920px'
+         },
+
          spacing: {
             '7.5': '1.875rem'
          },
