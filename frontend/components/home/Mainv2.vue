@@ -94,7 +94,7 @@
 
          <section class="flex h-1/4 w-full items-center justify-center border-t border-t-dark/15">
             <!-- Boxes orders are from left to right  -->
-
+            <!-- tutaj -->
             <!-- First box -->
             <div class="flexcol flex items-center justify-center"></div>
          </section>
