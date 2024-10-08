@@ -1,7 +1,6 @@
 <template>
     <div>
-        <SharedHeader />
-        <main class="container">
+        <main>
             <slot />
         </main>
     </div>

@@ -1,0 +1,9 @@
+:root {
+   --navbarpadding-y: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    :root {
+        --navbarpadding-y: 20px
+    }
+}

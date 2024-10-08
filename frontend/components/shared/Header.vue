@@ -7,8 +7,8 @@
          <MoveUpRight :stroke-width="1.5" class="text-yellow/55" />
       </div>
 
-      <nav class=" bg-dark/10 ">
-         <div class="container flex items-center justify-between px-40.5 py-6">
+      <nav class=" bg-dark/10">
+         <div class="flex items-center justify-between px-40.5 py-6 w-5/6 mx-auto">
             <img src="/XL_Logo.png" alt="Logo" />
             <div class="space-x-4">
                <template v-for="link in navLinks" :key="link['id']">
