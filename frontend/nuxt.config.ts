@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@nuxtjs/fontaine'
   ],
   app: {
     head: {
@@ -29,5 +30,10 @@ export default defineNuxtConfig({
       'Kumbh Sans': [400, 500],
       "Inter": [400, 500, 600, 700]
     }
+  },
+  
+  fontMetrics: {
+    fonts: ['Inter', 'Kumbh Sans'],
+
   }
 })

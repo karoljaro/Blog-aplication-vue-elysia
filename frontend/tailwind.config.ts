@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default <Partial<Config>>{
@@ -16,11 +17,17 @@ export default <Partial<Config>>{
    theme: {
       extend: {
          container: {
-            center: true
-         },
-
-         screens: {
-            '2xl': '1920px'
+            center: true,
+            screens: {
+               // ultra small phones
+               us: '361px',
+               // tablets
+               sm: '760px',
+               // laptops
+               lg: '1440px',
+               // PC
+               xl: '1920px'
+            }
          },
 
          spacing: {
@@ -71,8 +78,8 @@ export default <Partial<Config>>{
       },
 
       fontFamily: {
-         inter: 'Inter',
-         'kumbh-sans': 'Kumbh Sans'
+         inter: ['Inter', 'Inter fallback', ...fontFamily.sans],
+         'kumbh-sans': ['Kumbh Sans', 'Kumbh Sans fallback', ...fontFamily.sans]
       }
    },
    plugins: []
