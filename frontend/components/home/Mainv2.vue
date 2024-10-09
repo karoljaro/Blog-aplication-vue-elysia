@@ -36,12 +36,12 @@
 
                <!-- -------------- SUB LEFT TOP SECTION OF MAIN CONTAINER -------------- -->
 
-               <div class="flex justify-end h-1/4 w-full border-t border-t-dark/15">
+               <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15">
                   <!-- Boxes orders are from left to right  -->
 
                   <div class="flex w-4/5 justify-end lg:pr-10 xl:pr-12.5">
                      <!-- First box -->
-                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10  xl:pr-12.5">
+                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10 xl:pr-12.5">
                         <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
                            <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
                               300<span class="text-yellow/55">+</span>
@@ -94,9 +94,26 @@
 
          <section class="flex h-1/4 w-full items-center justify-center border-t border-t-dark/15">
             <!-- Boxes orders are from left to right  -->
-            <!-- tutaj -->
+
             <!-- First box -->
-            <div class="flexcol flex items-center justify-center"></div>
+            <div class="flex flex-col items-center justify-center sm:space-y-2.5 sm:px-4 lg:space-y-5 lg:pl-20 lg:pr-12.5 xl:space-y-7.5 xl:pl-40.5 xl:pr-12.5">
+               <FileClock :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:!size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Latest News Updates</p>
+                     <p class="font-inter text-grey/60 !leading-normal -tracking-[3%] text-left font-normal sm:text-sm lg:text-base xl:text-lg">
+                        Stay Current
+                     </p>
+                  </div>
+
+                  <SharedBtnSecondBtn class="xl:ml-5 sm:ml-3.5" />
+               </div>
+
+               <p class="font-kumbh-sans !leading-normal -tracking-[3%] font-normal text-grey/60 text-left self-start xl:text-xl lg:text-base sm:text-sm">
+                  Over 1,000 articles published monthly
+               </p>   
+            </div>
          </section>
       </main>
    </div>
