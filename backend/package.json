@@ -11,7 +11,7 @@
         "seed": "tsx src/prisma/seeds/seed.ts"
     },
     "dependencies": {
-        "@elysiajs/swagger": "^1.1.3",
+        "@elysiajs/swagger": "^1.1.5",
         "@prisma/client": "5.20.0",
         "consola": "^3.2.3",
         "elysia": "latest",
