@@ -4,7 +4,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "bun run --watch src/index.ts",
-        "prisma:seed": "bunx prisma db seed"
+        "prisma:seed": "bunx prisma db seed",
+        "prisma:dev": "cd src/prisma && bunx prisma migrate dev && bun run prisma:seed"
     },
     "prisma": {
         "seed": "tsx src/prisma/seeds/seed.ts"

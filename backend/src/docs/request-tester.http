@@ -3,7 +3,7 @@ GET http://localhost:3049/api/posts/
 Accept: application/json
 
 ### Get By ID
-GET http://localhost:3049/api/posts/9d6a2ba0-4882-4734-86b6-84f5776969e6
+GET http://localhost:3049/api/posts/3ce27cd3-8abb-437f-b778-44365736a426
 Accept: application/json
 
 ### Create
