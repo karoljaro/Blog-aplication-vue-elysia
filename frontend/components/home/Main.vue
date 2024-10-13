@@ -1,199 +1,160 @@
 <template>
-   <main class="h-[calc(100vh-170px)]">
-      <!-- CONTINER -->
-      <div class="flex h-3/4">
-         <!-- LEFT SIDE -->
-         <div class="w-3/5">
-            <div class="flex h-3/4 w-full items-center justify-end pr-12.5">
-               <div class="w-4/5 pt-12.5">
-                  <div class="space-y-6 text-left">
-                     <p
-                        class="font-kumbh-sans text-3xl font-medium leading-[120%] -tracking-[3%] text-dark/40"
-                     >
-                        Your Journey to Tomorrow Begins Here
-                     </p>
-                     <div class="space-y-5">
-                        <h1
-                           class="font-kumbh-sans text-[70px] font-medium leading-[120%] -tracking-[3%] text-white"
-                        >
-                           Explore the Frontiers of Artificial Intelligence
-                        </h1>
+   <!-- -------------- WRAPPER -------------- -->
+   <div class="flex h-screen flex-col">
+      <Header />
 
-                        <p
-                           class="font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/50"
-                        >
-                           Welcome to the epicenter of AI innovation. FutureTech AI News is your
-                           passport to a world where machines think, learn, and reshape the future.
-                           Join us on this visionary expedition into the heart of AI.
+      <main class="mx-auto max-w-screen-xl flex-grow">
+         <!-- ------------ TOP MAIN -------------- -->
+
+         <section class="flex h-3/4">
+            <!-- -------------- LEFT TOP SIDE SECTION OF MAIN -------------- -->
+
+            <section class="w-3/5">
+               <div class="flex h-3/4 w-full items-center justify-start sm:px-4 xl:pl-40.5 lg:pl-20 lg:pr-10 xl:pr-12.5">
+                  <div class="w-full sm:pt-2.5 lg:pt-0 xl:pt-12.5">
+                     <!-- -------------- TEXT DIV -------------- -->
+
+                     <div class="text-left sm:space-y-3.5 lg:space-y-4 xl:space-y-6">
+                        <p class="text-left font-kumbh-sans font-medium leading-[120%] -tracking-[3%] text-dark/40 sm:text-lg lg:text-[1.375rem] xl:text-3xl">
+                           Your Journey to Tomorrow Begins Here
                         </p>
+
+                        <div class="sm:space-y-2.5 lg:space-y-3.5 xl:space-y-5">
+                           <h1 class="text-left font-kumbh-sans font-medium !leading-[120%] -tracking-[3%] text-white sm:text-3xl lg:text-[3.438rem] xl:text-[4.375rem]">
+                              Explore the Frontiers of Artificial Intelligence
+                           </h1>
+
+                           <p class="text-left font-inter font-normal leading-normal -tracking-[3%] text-grey/50 sm:text-sm lg:text-base xl:text-lg">
+                              Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us
+                              on this visionary expedition into the heart of AI.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>
 
-            <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15">
-               <div
-                  class="flex items-center justify-start border-r border-solid border-dark/15 pr-12.5"
-               >
-                  <div class="w-[15rem] space-y-2.5">
-                     <h3
-                        class="-trackng-[3%] font-inter text-[2.5rem] font-semibold leading-normal text-white"
-                     >
-                        300<span class="text-yellow/55">+</span>
-                     </h3>
-                     <p
-                        class="font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/60"
-                     >
-                        News available
-                     </p>
+               <!-- -------------- SUB LEFT TOP SECTION OF MAIN CONTAINER -------------- -->
+
+               <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15 xl:pl-40.5 lg:pl-20 sm:pl-4">
+                  <!-- Boxes orders are from left to right  -->
+
+                  <div class="flex w-full justify-end lg:pr-10 xl:pr-12.5">
+                     <!-- First box -->
+                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10 xl:pr-12.5">
+                        <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
+                           <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
+                              300<span class="text-yellow/55">+</span>
+                           </h3>
+                           <p class="font-inter font-normal leading-normal -tracking-[3%] text-grey/60 sm:text-sm xl:text-lg">News available</p>
+                        </div>
+                     </div>
+
+                     <!-- Second box -->
+                     <div class="flex flex-1 items-center justify-start border-x border-x-dark/15 sm:px-5 lg:px-10 xl:px-12.5">
+                        <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
+                           <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
+                              12k<span class="text-yellow/55">+</span>
+                           </h3>
+                           <p class="font-inter font-normal leading-normal -tracking-[3%] text-grey/60 sm:text-sm xl:text-lg">Total Reads</p>
+                        </div>
+                     </div>
+
+                     <!-- Third box -->
+                     <div class="flex flex-1 items-center justify-start sm:pl-5 sm:pr-0 lg:pl-10 xl:pl-12.5">
+                        <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
+                           <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
+                              10k<span class="text-yellow/55">+</span>
+                           </h3>
+                           <p class="font-inter font-normal leading-normal -tracking-[3%] text-grey/60 sm:text-sm xl:text-lg">News available</p>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div
-                  class="flex h-full items-center justify-start border-r border-solid border-dark/15 px-12.5"
-               >
-                  <div class="w-[15rem] space-y-2.5">
-                     <h3
-                        class="-trackng-[3%] font-inter text-[2.5rem] font-semibold leading-normal text-white"
-                     >
-                        12k<span class="text-yellow/55">+</span>
-                     </h3>
-                     <p
-                        class="font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/60"
-                     >
-                        Total Reads
+            </section>
+
+            <!-- -------------- Right TOP SIDE SECTION OF MAIN -------------- -->
+            <section class="relative flex h-full w-2/5 flex-col items-start justify-end border-l border-l-dark/15 sm:pb-10 sm:pl-10 lg:pb-12.5 lg:pl-12.5 xl:pb-20 xl:pl-20">
+               <div class="sm:space-y-5 xl:space-y-[1.875rem]">
+                  <SharedAvatarGroupe :data="avatarPhotos" />
+
+                  <div class="sm:space-y-1 lg:space-y-1.5 xl:space-y-3.5">
+                     <h2 class="text-left font-inter font-medium leading-normal -tracking-[3%] text-white sm:text-lg lg:text-xl xl:text-2xl">Explore 1000+ resources</h2>
+
+                     <p class="text-left font-inter font-medium leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">
+                        Over 1,000 articles on emerging tech trends and breakthroughs.
                      </p>
                   </div>
+
+                  <SharedBtnPrimaryBtn> Explore News </SharedBtnPrimaryBtn>
                </div>
-               <div class="flex h-full items-center justify-start pl-12.5">
-                  <div class="w-[15rem] space-y-2.5">
-                     <h3
-                        class="-trackng-[3%] font-inter text-[2.5rem] font-semibold leading-normal text-white"
-                     >
-                        10k<span class="text-yellow/55">+</span>
-                     </h3>
-                     <p
-                        class="font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/60"
-                     >
-                        Active Users
-                     </p>
+            </section>
+         </section>
+         <!-- ------------ BOTTOM MAIN (SUB CONTAINER) -------------- -->
+
+         <section class="flex h-1/4 w-full items-stretch justify-center border-t border-t-dark/15 xl:px-40.5 lg:px-20 sm:px-4">
+            <!-- Boxes orders are from left to right  -->
+
+            <!-- First box -->
+            <div class="p flex w-1/3 flex-col justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pr-20 lg:pr-12.5 sm:pr-5">
+               <FileClock :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Latest News Updates</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Stay Current</p>
                   </div>
-               </div>
-            </div>
-         </div>
 
-         <!-- RIGHT SIDE  -->
-         <div
-            class="relative flex h-full w-2/5 flex-col items-start justify-end border-l border-solid border-dark/15 pb-12.5 pl-12.5"
-         >
-            <div class="space-y-[1.875rem]">
-               <SharedAvatarGroupe :data="avatarPhotos" />
-
-               <div class="space-y-3.5">
-                  <h2
-                     class="text-left font-inter text-2xl font-medium leading-normal -tracking-[3%] text-white"
-                  >
-                     Explore 1000+ news
-                  </h2>
-                  <p
-                     class="text-left font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/60"
-                  >
-                     Over 1,000 articles on emerging tech trends and breakthroughs.
-                  </p>
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <SharedBtnPrimaryBtn> Explore News </SharedBtnPrimaryBtn>
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  Over 1,000 articles published monthly
+               </p>
             </div>
-         </div>
-      </div>
 
-      <!-- SUB CONTAINER -->
-      <div class="flex h-1/4 items-center justify-center border-t border-t-dark/15">
-         <div class="flex flex-col items-center justify-center space-y-7.5 pr-12">
-            <FileClock :size="50" :stroke-width="1" class="self-start text-yellow/55" />
+            <!-- Second box -->
 
-            <div class="flex w-[26.583rem] justify-between">
-               <div class="space-y-1">
-                  <p
-                     class="text-left font-inter text-xl font-medium leading-normal -tracking-[3%] text-white"
-                  >
-                     Latest News Updates
-                  </p>
-                  <p
-                     class="text-left font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/50"
-                  >
-                     Stay Current
-                  </p>
+            <div class="flex flex-1 flex-col items-center justify-center border-x border-x-dark/15 sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:px-20 lg:px-12.5 sm:px-5">
+               <Boxes :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Expert Contributors</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Trusted Insights</p>
+                  </div>
+
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <SharedBtnSecondBtn />
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  50+ renowned AI experts on our team
+               </p>
             </div>
 
-            <p
-               class="self-start text-left font-kumbh-sans text-xl font-normal leading-normal -tracking-[3%] text-grey/60"
-            >
-               Over 1,000 articles published monthly
-            </p>
-         </div>
+            <!-- third box -->
+            <div class="flex flex-1 flex-col items-center justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pl-20 lg:pl-12.5 sm:pl-5">
+               <UsersRound :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
 
-         <div
-            class="flex h-full flex-col items-center justify-center space-y-7.5 border-x border-dark/15 px-12"
-         >
-            <Boxes :size="50" :stroke-width="1" class="self-start text-yellow/55" />
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Global Readership</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Worldwide Impact</p>
+                  </div>
 
-            <div class="flex w-[26.583rem] justify-between">
-               <div class="space-y-1">
-                  <p
-                     class="text-left font-inter text-xl font-medium leading-normal -tracking-[3%] text-white"
-                  >
-                     Expert Contributors
-                  </p>
-                  <p
-                     class="text-left font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/50"
-                  >
-                     Trusted Insights
-                  </p>
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <SharedBtnSecondBtn />
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  2 million monthly readers
+               </p>
             </div>
-
-            <p
-               class="self-start text-left font-kumbh-sans text-xl font-normal leading-normal -tracking-[3%] text-grey/60"
-            >
-               50+ renowned AI experts on our team
-            </p>
-         </div>
-         <div class="flex flex-col items-center justify-center space-y-7.5 pl-12">
-            <UsersRound :size="48" :stroke-width="1" class="self-start text-yellow/55" />
-
-            <div class="flex w-[26.583rem] justify-between">
-               <div class="space-y-1">
-                  <p
-                     class="text-left font-inter text-xl font-medium leading-normal -tracking-[3%] text-white"
-                  >
-                     Global Readership
-                  </p>
-                  <p
-                     class="text-left font-inter text-lg font-normal leading-normal -tracking-[3%] text-grey/50"
-                  >
-                     Worldwide Impact
-                  </p>
-               </div>
-
-               <SharedBtnSecondBtn />
-            </div>
-
-            <p
-               class="self-start text-left font-kumbh-sans text-xl font-normal leading-normal -tracking-[3%] text-grey/60"
-            >
-               2 million monthly readers
-            </p>
-         </div>
-      </div>
-   </main>
+         </section>
+      </main>
+   </div>
 </template>
 
 <script setup lang="ts">
+import Header from '../shared/Header.vue';
 import { FileClock, Boxes, UsersRound } from 'lucide-vue-next';
 
 type AvatarPhoto_TYPE = {
