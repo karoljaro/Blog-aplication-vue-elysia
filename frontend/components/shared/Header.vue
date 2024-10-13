@@ -6,7 +6,7 @@
       </div>
 
       <nav class="bg-dark/10">
-         <div class="mx-auto flex w-5/6 items-center justify-between px-40.5 py-6">
+         <div class="mx-auto flex max-w-[1920px] items-center justify-between xl:px-40.5 lg:px-20 sm:px-4 py-6">
             <!-- ------ LOGO ------ -->
             <picture>
                <source media="(min-width: 1920px)" srcset="/XL_Logo.png">
@@ -14,7 +14,9 @@
                <img src="/SM_Logo.png" alt="Logo">
             </picture>
 
-            <div class="space-x-4">
+
+            <AlignRight :size="34" :stroke-width="1.5" class="text-white sm:block lg:hidden" />
+            <div class="space-x-4 lg:block sm:hidden">
                <template v-for="link in navLinks" :key="link['id']">
                   <NuxtLink
                      :to="link['link']"
@@ -26,14 +28,14 @@
                </template>
             </div>
 
-            <NuxtLink class="rounded-[0.625rem] bg-yellow/55 xl:px-5 xl:py-3.5 lg:px-3.5 lg:py-2.5  font-inter xl:text-lg lg:text-sm !leading-normal text-dark/08"> Contact Us </NuxtLink>
+            <NuxtLink class="rounded-[0.625rem] bg-yellow/55 xl:px-5 xl:py-3.5 lg:px-3.5 lg:py-2.5  font-inter xl:text-lg lg:text-sm !leading-normal text-dark/08 sm:hidden lg:block"> Contact Us </NuxtLink>
          </div>
       </nav>
    </header>
 </template>
 
 <script setup lang="ts">
-import { MoveUpRight } from 'lucide-vue-next';
+import { MoveUpRight, AlignRight } from 'lucide-vue-next';
 import { CurrentRoute } from '~/types/enumCurrentRoute';
 
 type LINK_TYPE = {
