@@ -1,18 +1,17 @@
 <template>
    <!-- -------------- WRAPPER -------------- -->
-
-   <div class="h-screen">
+   <div class="flex h-screen flex-col">
       <Header />
 
-      <main class="mx-auto h-[calc(100vh-170px)] max-w-[1920px]">
+      <main class="mx-auto max-w-screen-xl flex-grow">
          <!-- ------------ TOP MAIN -------------- -->
 
          <section class="flex h-3/4">
             <!-- -------------- LEFT TOP SIDE SECTION OF MAIN -------------- -->
 
             <section class="w-3/5">
-               <div class="flex h-3/4 w-full items-center justify-end sm:px-4 lg:pr-10 xl:pr-12.5">
-                  <div class="sm:w-full sm:pt-2.5 lg:w-4/5 lg:pt-0 xl:pt-12.5">
+               <div class="flex h-3/4 w-full items-center justify-start sm:px-4 xl:pl-40.5 lg:pl-20 lg:pr-10 xl:pr-12.5">
+                  <div class="w-full sm:pt-2.5 lg:pt-0 xl:pt-12.5">
                      <!-- -------------- TEXT DIV -------------- -->
 
                      <div class="text-left sm:space-y-3.5 lg:space-y-4 xl:space-y-6">
@@ -36,12 +35,12 @@
 
                <!-- -------------- SUB LEFT TOP SECTION OF MAIN CONTAINER -------------- -->
 
-               <div class="flex justify-end h-1/4 w-full border-t border-t-dark/15">
+               <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15 xl:pl-40.5 lg:pl-20 sm:pl-4">
                   <!-- Boxes orders are from left to right  -->
 
-                  <div class="flex w-4/5 justify-end lg:pr-10 xl:pr-12.5">
+                  <div class="flex w-full justify-end lg:pr-10 xl:pr-12.5">
                      <!-- First box -->
-                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10  xl:pr-12.5">
+                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10 xl:pr-12.5">
                         <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
                            <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
                               300<span class="text-yellow/55">+</span>
@@ -92,11 +91,63 @@
          </section>
          <!-- ------------ BOTTOM MAIN (SUB CONTAINER) -------------- -->
 
-         <section class="flex h-1/4 w-full items-center justify-center border-t border-t-dark/15">
+         <section class="flex h-1/4 w-full items-stretch justify-center border-t border-t-dark/15 xl:px-40.5 lg:px-20 sm:px-4">
             <!-- Boxes orders are from left to right  -->
-            <!-- tutaj -->
+
             <!-- First box -->
-            <div class="flexcol flex items-center justify-center"></div>
+            <div class="p flex w-1/3 flex-col justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pr-20 lg:pr-12.5 sm:pr-5">
+               <FileClock :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Latest News Updates</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Stay Current</p>
+                  </div>
+
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
+               </div>
+
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  Over 1,000 articles published monthly
+               </p>
+            </div>
+
+            <!-- Second box -->
+
+            <div class="flex flex-1 flex-col items-center justify-center border-x border-x-dark/15 sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:px-20 lg:px-12.5 sm:px-5">
+               <Boxes :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Expert Contributors</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Trusted Insights</p>
+                  </div>
+
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
+               </div>
+
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  50+ renowned AI experts on our team
+               </p>
+            </div>
+
+            <!-- third box -->
+            <div class="flex flex-1 flex-col items-center justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pl-20 lg:pl-12.5 sm:pl-5">
+               <UsersRound :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
+
+               <div class="flex w-full justify-between">
+                  <div class="sm:space-y-0.5 xl:space-y-1">
+                     <p class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white sm:text-base lg:text-lg xl:text-xl">Global Readership</p>
+                     <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-lg">Worldwide Impact</p>
+                  </div>
+
+                  <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
+               </div>
+
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
+                  2 million monthly readers
+               </p>
+            </div>
          </section>
       </main>
    </div>
