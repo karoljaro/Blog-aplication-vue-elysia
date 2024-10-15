@@ -1,15 +1,13 @@
 <template>
    <section class="flex min-h-screen flex-col">
       <!-- ------------ SECTION HEADER ------------ -->
-      <div class="w-full border-y border-y-dark/15 bg-dark/10">
-         <div class="mx-auto max-w-screen-xl sm:space-y-2.5 sm:px-4 sm:py-10 lg:px-20 lg:py-20 xl:space-y-4 xl:px-40.5 xl:py-30">
-            <SharedSectionLabel> Unlock the Power of </SharedSectionLabel>
+      <SharedSectionHeader>
+         <SharedSectionLabel> Unlock the Power of </SharedSectionLabel>
 
             <h1 class="text-left font-kumbh-sans font-medium !leading-[130%] -tracking-[3%] text-white sm:space-y-2.5 sm:text-[1.75rem] lg:text-[2.75rem] xl:space-y-4 xl:text-[3.625rem]">
                FutureTech Features
             </h1>
-         </div>
-      </div>
+      </SharedSectionHeader>
 
       <!-- ------------ Future Technology Blog ------------ -->
 
