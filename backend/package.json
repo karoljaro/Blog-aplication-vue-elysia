@@ -8,6 +8,7 @@
         "prisma:dev": "cd src/prisma && bunx prisma migrate dev && bun run prisma:seed"
     },
     "prisma": {
+        "schema": "src/prisma/schema.prisma",
         "seed": "tsx src/prisma/seeds/seed.ts"
     },
     "dependencies": {
