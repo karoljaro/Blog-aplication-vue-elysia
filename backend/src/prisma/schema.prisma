@@ -7,22 +7,60 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
-  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  title     String
-  content   String   @db.Text()
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  String   @map("author_id")
-  likes     Int?     @map("post_likes")
-  comments  Int?     @map("post_comments")
-  shared    Int?     @map("post_shared")
-  createdAt DateTime @default(now())
-  updateAt  DateTime @updatedAt
+model User {
+  id           String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  username     String
+  email        String     @unique
+  createdPosts Post[]     @relation("CreatedPosts")
+  likedPosts   PostLike[]
+
+  @@index([email])
 }
 
-model User {
-  id       String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  username String
-  email    String @unique
-  posts    Post[]
+model Post {
+  id         String              @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  title      String
+  content    String              @db.Text()
+  categories CategoriesOnPosts[]
+  author     User                @relation("CreatedPosts", fields: [authorId], references: [id])
+  authorId   String              @db.Uuid
+  likedBy    PostLike[]
+  comments   Comment[]
+  shared     Int?                @map("post_shared")
+  createdAt  DateTime            @default(now())
+  updateAt   DateTime            @updatedAt
+}
+
+model Category {
+  id    String              @unique @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name  String              @unique
+  posts CategoriesOnPosts[]
+}
+
+model PostLike {
+  postId    String   @unique @db.Uuid
+  userId    String   @unique @db.Uuid
+  post      Post     @relation(fields: [postId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+
+  @@id([postId, userId])
+}
+
+model Comment {
+  id      String @unique @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  content String
+  post    Post   @relation(fields: [postId], references: [id])
+  postId  String @unique @db.Uuid
+  createdAt DateTime @default(now())
+}
+
+model CategoriesOnPosts {
+  post       Post     @relation(fields: [postId], references: [id])
+  postId     String   @db.Uuid
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String   @db.Uuid
+  createdAt DateTime @default(now())
+
+  @@id([postId, categoryId])
 }

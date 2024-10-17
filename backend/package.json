@@ -9,7 +9,7 @@
     },
     "prisma": {
         "schema": "src/prisma/schema.prisma",
-        "seed": "tsx src/prisma/seeds/seed.ts"
+        "seed": "tsx src/prisma/seeds/index.ts"
     },
     "dependencies": {
         "@elysiajs/swagger": "^1.1.5",
