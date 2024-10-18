@@ -1,10 +1,18 @@
 import { Elysia } from "elysia";
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 import consola from "consola";
 import swagger from "@elysiajs/swagger";
+import { postController } from "./controllers/postController";
 
 export const prisma = new PrismaClient();
-const app = new Elysia().use(swagger());
+export type PrismaTx = Prisma.TransactionClient;
+
+const app = new Elysia()
+    .use(swagger())
+    .group("/api", (app) => {
+        return app.use(postController);
+    })
+    .listen(3049);
 
 initialize();
 
