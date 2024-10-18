@@ -1,6 +1,6 @@
 import consola from "consola";
 import { prisma } from "..";
-import { Post, Prisma } from "@prisma/client";
+import { Post, Prisma, User } from "@prisma/client";
 
 export async function getPosts() {
     try {
@@ -11,7 +11,7 @@ export async function getPosts() {
         });
     } catch (err) {
         if (err instanceof Prisma.PrismaClientKnownRequestError) {
-            console.error(err.name);
+            consola.error(err.name);
         }
     }
 }
@@ -23,6 +23,21 @@ export async function getPostById(postId: Post["id"]) {
                 id: postId,
             },
         });
+    } catch (err) {
+        if (err instanceof Prisma.PrismaClientKnownRequestError) {
+            consola.error(err.name);
+        }
+    }
+}
+
+
+export async function getPostCreatedByUser(authorId: User['id']) {
+    try {
+        return prisma.post.findMany({
+            where: {
+                authorId: authorId
+            }
+        })
     } catch (err) {
         if (err instanceof Prisma.PrismaClientKnownRequestError) {
             console.error(err.name);
