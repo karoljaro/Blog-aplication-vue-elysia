@@ -15,11 +15,28 @@ model User {
 }
 
 model Post {
-  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  title     String
-  content   String
-  authorId  String   @db.Uuid
-  author    User     @relation(fields: [authorId], references: [id])
-  createdAt DateTime @default(now())
-  updateAt  DateTime @updatedAt
+  id             String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  title          String
+  content        String
+  authorId       String           @db.Uuid
+  author         User             @relation(fields: [authorId], references: [id])
+  CategoryOnPost CategoryOnPost[]
+  createdAt      DateTime         @default(now())
+  updateAt       DateTime         @updatedAt
+}
+
+model Category {
+  id    String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name  String           @unique
+  posts CategoryOnPost[]
+}
+
+model CategoryOnPost {
+  post       Post     @relation(fields: [postId], references: [id])
+  postId     String   @db.Uuid
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String   @db.Uuid
+  createdAt  DateTime @default(now())
+
+  @@id([postId, categoryId])
 }

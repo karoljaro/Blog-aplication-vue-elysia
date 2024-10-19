@@ -4,6 +4,7 @@ import consola from "consola";
 import swagger from "@elysiajs/swagger";
 import { postController } from "./controllers/postController";
 import { userController } from "./controllers/userController";
+import { categoryController } from "./controllers/categoryController";
 
 export const prisma = new PrismaClient();
 export type PrismaTx = Prisma.TransactionClient;
@@ -11,7 +12,7 @@ export type PrismaTx = Prisma.TransactionClient;
 const app = new Elysia()
     .use(swagger())
     .group("/api", (app) => {
-        return app.use(postController).use(userController);
+        return app.use(postController).use(userController).use(categoryController);
     })
     .listen(3049);
 

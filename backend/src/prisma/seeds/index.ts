@@ -2,6 +2,8 @@ import { PrismaClient } from "@prisma/client"
 import seedCreatePost from "./seed_createPosts";
 import consola from "consola";
 import seedCreateUsers from "./seed_createUser";
+import seedCreateCategories from "./seed_createCategories";
+import seedCreateCategoriesOnPost from "./seed_createCategoryOnPost";
 
 export const seedPrisma = new PrismaClient();
 
@@ -9,6 +11,8 @@ async function main() {
     await seedPrisma.$transaction(async (tx) => {
         await seedCreateUsers(tx);
         await seedCreatePost(tx);
+        await seedCreateCategories(tx);
+        await seedCreateCategoriesOnPost(tx)
     })   
 }
 
