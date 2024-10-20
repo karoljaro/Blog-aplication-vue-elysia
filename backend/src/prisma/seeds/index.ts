@@ -4,6 +4,7 @@ import consola from "consola";
 import seedCreateUsers from "./seed_createUser";
 import seedCreateCategories from "./seed_createCategories";
 import seedCreateCategoriesOnPost from "./seed_createCategoryOnPost";
+import seedCreateLikes from "./seed_createLikes";
 
 export const seedPrisma = new PrismaClient();
 
@@ -12,7 +13,8 @@ async function main() {
         await seedCreateUsers(tx);
         await seedCreatePost(tx);
         await seedCreateCategories(tx);
-        await seedCreateCategoriesOnPost(tx)
+        await seedCreateCategoriesOnPost(tx);
+        await seedCreateLikes(tx);
     })   
 }
 

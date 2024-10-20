@@ -8,6 +8,13 @@ export async function getPosts() {
             orderBy: {
                 createdAt: "asc",
             },
+            include: {
+                _count: {
+                    select: {
+                        postLikes: true
+                    }
+                }
+            },
         });
     } catch (err) {
         if (err instanceof Prisma.PrismaClientKnownRequestError) {
