@@ -11,7 +11,8 @@ export async function getPosts() {
             include: {
                 _count: {
                     select: {
-                        postLikes: true
+                        postLikes: true,
+                        comments: true,
                     }
                 }
             },
