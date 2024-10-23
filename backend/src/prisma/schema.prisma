@@ -24,6 +24,7 @@ model Post {
   author         User             @relation(fields: [authorId], references: [id])
   postLikes      PostLike[]
   comments       Comments[]
+  SharedPost     SharedPost[]
   CategoryOnPost CategoryOnPost[]
   createdAt      DateTime         @default(now())
   updateAt       DateTime         @updatedAt
@@ -45,6 +46,12 @@ model Comments {
   postId    String
   commentBy User   @relation(fields: [userId], references: [id])
   userId    String
+}
+
+model SharedPost {
+  id         String @id @default(uuid())
+  sharedPost Post   @relation(fields: [postId], references: [id])
+  postId     String
 }
 
 model Category {

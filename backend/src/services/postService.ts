@@ -13,6 +13,7 @@ export async function getPosts() {
                     select: {
                         postLikes: true,
                         comments: true,
+                        SharedPost: true
                     }
                 }
             },
