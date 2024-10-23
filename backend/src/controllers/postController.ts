@@ -1,49 +1,7 @@
-import Elysia, { t } from "elysia";
-import { createPost, deletePost, getPostById, getPosts, updatePost } from "../services/postService";
+import Elysia from "elysia";
+import {getPostById, getPostCreatedByUser, getPosts} from "../services/postService";
 
-const postRoutes = new Elysia({ prefix: "/posts" })
+export const postController = new Elysia({ prefix: "/posts" })
     .get("/", () => getPosts())
-    .get("/:id", ({ params: { id } }) => getPostById(id), {
-        params: t.Object({
-            id: t.String(),
-        }),
-    })
-    .post("/", ({ body }) => createPost(body), {
-        body: t.Object({
-            title: t.String({
-                minLength: 3,
-                maxLength: 50,
-            }),
-            content: t.String({
-                minLength: 3,
-                maxLength: 50,
-            })
-        }),
-    })
-    .patch("/:id", ({ params: { id }, body }) => updatePost(id, body), {
-        params: t.Object({
-            id: t.String(),
-        }),
-        body: t.Object(
-            {
-                title: t.String({
-                    minLength: 3,
-                    maxLength: 50,
-                }),
-                content: t.String({
-                    minLength: 3,
-                    maxLength: 50,
-                }),
-            },
-            {
-                minProperties: 1,
-            },
-        ),
-    })
-    .delete("/", ({ body }) => deletePost(body), {
-        body: t.Object({
-            id: t.String(),
-        }),
-    });
-
-export default postRoutes;
+    .get("/:id", ({ params: { id }}) => getPostById(id))
+    .get("/createdBy/:auhorId", ({ params: { auhorId }}) => getPostCreatedByUser(auhorId))

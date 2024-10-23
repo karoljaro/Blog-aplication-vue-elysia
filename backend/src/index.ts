@@ -1,11 +1,20 @@
 import { Elysia } from "elysia";
-import postRoutes from "./controllers/postController";
-import { PrismaClient } from "@prisma/client";
+import { Prisma, PrismaClient } from "@prisma/client";
 import consola from "consola";
 import swagger from "@elysiajs/swagger";
+import { postController } from "./controllers/postController";
+import { userController } from "./controllers/userController";
+import { categoryController } from "./controllers/categoryController";
 
 export const prisma = new PrismaClient();
-const app = new Elysia().use(swagger());
+export type PrismaTx = Prisma.TransactionClient;
+
+const app = new Elysia()
+    .use(swagger())
+    .group("/api", (app) => {
+        return app.use(postController).use(userController).use(categoryController);
+    })
+    .listen(3049);
 
 initialize();
 
@@ -25,9 +34,4 @@ async function validateDatabaseConnection() {
     }
 }
 
-
-app.group("/api", (app) => {
-    return app.use(postRoutes);
-}).listen(Bun.env.PORT || 3049);
-
-console.log(`🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`);
+console.log(`🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}/swagger`);
