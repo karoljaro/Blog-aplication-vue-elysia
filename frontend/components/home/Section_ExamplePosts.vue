@@ -30,6 +30,9 @@
       </nav>
 
       <!-- -------------- EXAMPLE POSTS -------------- -->
+      <SharedExamplePosts />
+      <SharedExamplePosts />
+      <SharedExamplePosts />
        
    </section>
 </template>
