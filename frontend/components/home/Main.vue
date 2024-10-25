@@ -10,23 +10,21 @@
             <!-- -------------- LEFT TOP SIDE SECTION OF MAIN -------------- -->
 
             <section class="w-3/5">
-               <div class="flex h-3/4 w-full items-center justify-start sm:px-4 xl:pl-40.5 lg:pl-20 lg:pr-10 xl:pr-12.5">
-                  <div class="w-full sm:pt-2.5 lg:pt-0 xl:pt-12.5">
+               <div class="flex items-center justify-start px-4 lg:pl-20 lg:pr-10 xl:pl-40.5 xl:pr-12.5">
+                  <div class="pb-7.5 pt-10 lg:py-[6.25rem] xl:pb-[6.25rem] xl:pt-[9.375rem]">
                      <!-- -------------- TEXT DIV -------------- -->
 
-                     <div class="text-left sm:space-y-3.5 lg:space-y-4 xl:space-y-6">
-                        <p class="text-left font-kumbh-sans font-medium leading-[120%] -tracking-[3%] text-dark/40 sm:text-lg lg:text-[1.375rem] xl:text-3xl">
-                           Your Journey to Tomorrow Begins Here
-                        </p>
+                     <div class="space-y-3.5 text-left lg:space-y-5 xl:space-y-6">
+                        <p class="text-left font-kumbh-sans text-lg font-medium !leading-[120%] -tracking-[3%] text-dark/40 lg:text-[1.375rem] xl:text-3xl">Your Journey to Tomorrow Begins Here</p>
 
-                        <div class="sm:space-y-2.5 lg:space-y-3.5 xl:space-y-5">
-                           <h1 class="text-left font-kumbh-sans font-medium !leading-[120%] -tracking-[3%] text-white sm:text-3xl lg:text-[3.438rem] xl:text-[4.375rem]">
+                        <div class="space-y-2.5 lg:space-y-3.5 xl:space-y-5">
+                           <h1 class="text-left font-kumbh-sans text-3xl font-medium !leading-[120%] -tracking-[3%] text-white lg:text-[3.438rem] xl:text-[4.375rem]">
                               Explore the Frontiers of Artificial Intelligence
                            </h1>
 
-                           <p class="text-left font-inter font-normal leading-normal -tracking-[3%] text-grey/50 sm:text-sm lg:text-base xl:text-lg">
-                              Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us
-                              on this visionary expedition into the heart of AI.
+                           <p class="text-left font-inter text-sm font-normal !leading-normal -tracking-[3%] text-grey/50 lg:text-base xl:text-lg">
+                              Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us on this visionary
+                              expedition into the heart of AI.
                            </p>
                         </div>
                      </div>
@@ -35,12 +33,12 @@
 
                <!-- -------------- SUB LEFT TOP SECTION OF MAIN CONTAINER -------------- -->
 
-               <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15 xl:pl-40.5 lg:pl-20 sm:pl-4">
+               <div class="flex h-1/4 w-full justify-end border-t border-t-dark/15 pl-4 lg:pl-20 xl:pl-40.5">
                   <!-- Boxes orders are from left to right  -->
 
                   <div class="flex w-full justify-end lg:pr-10 xl:pr-12.5">
                      <!-- First box -->
-                     <div class="flex flex-1 items-center justify-start sm:pr-5 lg:pr-10 xl:pr-12.5">
+                     <div class="flex flex-1 items-center justify-start py-5 pr-5 lg:py-7.5 lg:pr-10 xl:py-12.5 xl:pr-12.5">
                         <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
                            <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
                               300<span class="text-yellow/55">+</span>
@@ -50,7 +48,7 @@
                      </div>
 
                      <!-- Second box -->
-                     <div class="flex flex-1 items-center justify-start border-x border-x-dark/15 sm:px-5 lg:px-10 xl:px-12.5">
+                     <div class="flex flex-1 items-center justify-start border-x border-x-dark/15 py-5 px-5 lg:px-10 lg:py-7.5 xl:px-12.5 xl:py-12.5">
                         <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
                            <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
                               12k<span class="text-yellow/55">+</span>
@@ -60,7 +58,7 @@
                      </div>
 
                      <!-- Third box -->
-                     <div class="flex flex-1 items-center justify-start sm:pl-5 sm:pr-0 lg:pl-10 xl:pl-12.5">
+                     <div class="flex flex-1 items-center justify-start py-5 pl-5 sm:pr-0 lg:py-7.5 lg:pl-10 xl:py-12.5 xl:pl-12.5">
                         <div class="w-full lg:space-y-0.5 xl:space-y-2.5">
                            <h3 class="text-left font-inter font-semibold leading-normal -tracking-[3%] text-white sm:text-2xl lg:text-3xl xl:text-[2.5rem]">
                               10k<span class="text-yellow/55">+</span>
@@ -91,11 +89,11 @@
          </section>
          <!-- ------------ BOTTOM MAIN (SUB CONTAINER) -------------- -->
 
-         <section class="flex h-1/4 w-full items-stretch justify-center border-t border-t-dark/15 xl:px-40.5 lg:px-20 sm:px-4">
+         <section class="flex h-1/4 w-full items-stretch justify-center border-t border-t-dark/15 sm:px-4 lg:px-20 xl:px-40.5">
             <!-- Boxes orders are from left to right  -->
 
             <!-- First box -->
-            <div class="p flex w-1/3 flex-col justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pr-20 lg:pr-12.5 sm:pr-5">
+            <div class="p flex w-1/3 flex-col justify-center sm:space-y-2.5 sm:pr-5 lg:space-y-5 lg:pr-12.5 xl:space-y-7.5 xl:pr-20">
                <FileClock :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
 
                <div class="flex w-full justify-between">
@@ -107,14 +105,12 @@
                   <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
-                  Over 1,000 articles published monthly
-               </p>
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">Over 1,000 articles published monthly</p>
             </div>
 
             <!-- Second box -->
 
-            <div class="flex flex-1 flex-col items-center justify-center border-x border-x-dark/15 sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:px-20 lg:px-12.5 sm:px-5">
+            <div class="flex flex-1 flex-col items-center justify-center border-x border-x-dark/15 sm:space-y-2.5 sm:px-5 lg:space-y-5 lg:px-12.5 xl:space-y-7.5 xl:px-20">
                <Boxes :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
 
                <div class="flex w-full justify-between">
@@ -126,13 +122,11 @@
                   <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
-                  50+ renowned AI experts on our team
-               </p>
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">50+ renowned AI experts on our team</p>
             </div>
 
             <!-- third box -->
-            <div class="flex flex-1 flex-col items-center justify-center sm:space-y-2.5 lg:space-y-5 xl:space-y-7.5 xl:pl-20 lg:pl-12.5 sm:pl-5">
+            <div class="flex flex-1 flex-col items-center justify-center sm:space-y-2.5 sm:pl-5 lg:space-y-5 lg:pl-12.5 xl:space-y-7.5 xl:pl-20">
                <UsersRound :size="50" :stroke-width="1" class="self-start text-yellow/55 sm:size-7.5 lg:size-10 xl:size-[3.125rem]" />
 
                <div class="flex w-full justify-between">
@@ -144,9 +138,7 @@
                   <SharedBtnSecondBtn class="sm:ml-3.5 xl:ml-5" />
                </div>
 
-               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">
-                  2 million monthly readers
-               </p>
+               <p class="self-start text-left font-kumbh-sans font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm lg:text-base xl:text-xl">2 million monthly readers</p>
             </div>
          </section>
       </main>
