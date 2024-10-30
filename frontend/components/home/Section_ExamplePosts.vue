@@ -3,12 +3,12 @@
       <!-- -------------- SECTION HEADER -------------- -->
       <SharedSectionHeader>
          <div
-            class="mx-auto flex max-w-screen-xl flex-row items-center justify-between sm:px-4 sm:py-10 lg:px-20 lg:py-20 xl:px-40.5 xl:py-30 [@media(max-width:800px)]:flex-col [@media(max-width:800px)]:space-y-7.5"
+            class="mx-auto flex max-w-screen-xl flex-row items-center justify-between px-4 py-10 lg:px-20 lg:py-20 xl:px-40.5 xl:py-30 [@media(max-width:800px)]:flex-col [@media(max-width:800px)]:space-y-7.5"
          >
-            <div class="sm:space-y-2.5 xl:space-y-4">
+            <div class="space-y-2.5 xl:space-y-4">
                <SharedSectionLabel> A Knowledge Treasure Throve </SharedSectionLabel>
 
-               <h1 class="text-left font-kumbh-sans font-medium !leading-[130%] -tracking-[3%] text-white sm:space-y-2.5 sm:text-[1.75rem] lg:text-[2.75rem] xl:space-y-4 xl:text-[3.625rem]">
+               <h1 class="text-left font-kumbh-sans font-medium !leading-[130%] -tracking-[3%] text-white space-y-2.5 text-[1.75rem] lg:text-[2.75rem] xl:space-y-4 xl:text-[3.625rem]">
                   Explore Future Tech In-Depth Blog Post
                </h1>
             </div>
@@ -18,14 +18,14 @@
       </SharedSectionHeader>
 
       <!-- -------------- EXAMPLE POSTS CATEGORY NAVBAR -------------- -->
-      <nav class="flex flex-row overflow-x-auto border-b border-b-dark/15 sm:space-x-3.5 sm:px-4 sm:py-5 lg:px-20 lg:py-10 xl:space-x-5 xl:px-40.5 xl:py-12.5">
+      <nav class="flex flex-row overflow-x-auto border-b border-b-dark/15 space-x-3.5 px-4 py-5 lg:px-20 lg:py-10 xl:space-x-5 xl:px-40.5 xl:py-12.5">
          <div
             v-for="category in postsCategory"
             :key="category['id']"
             ref="categoryRef"
-            class="cursor-pointer rounded-[0.438rem] border border-dark/15 bg-dark/08 sm:px-4 sm:py-4.5 lg:px-5 lg:py-6 xl:px-6 xl:py-7.5"
+            class="cursor-pointer rounded-[0.438rem] border border-dark/15 bg-dark/08 px-4 py-4.5 lg:px-5 lg:py-6 xl:px-6 xl:py-7.5"
          >
-            <p class="min-w-max text-center font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 sm:text-sm xl:text-lg">{{ category['name'] }}</p>
+            <p class="min-w-max text-center font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm xl:text-lg">{{ category['name'] }}</p>
          </div>
       </nav>
 

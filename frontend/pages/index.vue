@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HomeMain />
+        <!-- <HomeMain /> -->
         <HomeSectionFutureTech />
         <HomeSectionExamplePosts />
     </div>
