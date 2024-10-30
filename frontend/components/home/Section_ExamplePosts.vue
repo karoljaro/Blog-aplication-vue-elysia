@@ -1,5 +1,5 @@
 <template>
-   <section class="flex min-h-screen flex-col">
+   <section class="flex flex-col">
       <!-- -------------- SECTION HEADER -------------- -->
       <SharedSectionHeader>
          <div
@@ -8,7 +8,7 @@
             <div class="space-y-2.5 xl:space-y-4">
                <SharedSectionLabel> A Knowledge Treasure Throve </SharedSectionLabel>
 
-               <h1 class="text-left font-kumbh-sans font-medium !leading-[130%] -tracking-[3%] text-white space-y-2.5 text-[1.75rem] lg:text-[2.75rem] xl:space-y-4 xl:text-[3.625rem]">
+               <h1 class="space-y-2.5 text-left font-kumbh-sans text-[1.75rem] font-medium !leading-[130%] -tracking-[3%] text-white lg:text-[2.75rem] xl:space-y-4 xl:text-[3.625rem]">
                   Explore Future Tech In-Depth Blog Post
                </h1>
             </div>
@@ -18,14 +18,16 @@
       </SharedSectionHeader>
 
       <!-- -------------- EXAMPLE POSTS CATEGORY NAVBAR -------------- -->
-      <nav class="flex flex-row overflow-x-auto border-b border-b-dark/15 space-x-3.5 px-4 py-5 lg:px-20 lg:py-10 xl:space-x-5 xl:px-40.5 xl:py-12.5">
-         <div
-            v-for="category in postsCategory"
-            :key="category['id']"
-            ref="categoryRef"
-            class="cursor-pointer rounded-[0.438rem] border border-dark/15 bg-dark/08 px-4 py-4.5 lg:px-5 lg:py-6 xl:px-6 xl:py-7.5"
-         >
-            <p class="min-w-max text-center font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm xl:text-lg">{{ category['name'] }}</p>
+      <nav class="border-b border-b-dark/15">
+         <div id="categoryNav" class="mx-auto flex max-w-screen-xl flex-row space-x-3.5 overflow-x-auto px-4 py-5 lg:px-20 lg:py-10 xl:space-x-5 xl:px-40.5 xl:py-12.5">
+            <div
+               v-for="category in postsCategory"
+               :key="category['id']"
+               ref="categoryRef"
+               class="cursor-pointer rounded-[0.438rem] border border-dark/15 bg-dark/08 px-4 py-4.5 lg:px-5 lg:py-6 xl:px-6 xl:py-7.5"
+            >
+               <p class="min-w-max text-center font-inter text-sm font-normal !leading-normal -tracking-[3%] text-grey/60 xl:text-lg">{{ category['name'] }}</p>
+            </div>
          </div>
       </nav>
 
@@ -33,7 +35,6 @@
       <SharedExamplePosts />
       <SharedExamplePosts />
       <SharedExamplePosts />
-       
    </section>
 </template>
 
@@ -87,3 +88,22 @@ const postsCategory: PostSCategory_TYPE[] = [
    }
 ];
 </script>
+
+<style lang="css" scoped>
+#categoryNav::-webkit-scrollbar {
+   height: 0.375rem;
+}
+
+#categoryNav::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+#categoryNav::-webkit-scrollbar-thumb {
+   background: #262626;
+   border-radius: 10px;
+}
+
+#categoryNav::-webkit-scrollbar-thumb:hover {
+   background: #333333;
+}
+</style>

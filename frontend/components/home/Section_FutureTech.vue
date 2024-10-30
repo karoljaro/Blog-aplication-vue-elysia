@@ -1,5 +1,5 @@
 <template>
-   <section class="flex min-h-screen flex-col">
+   <section class="flex flex-col">
       <!-- ------------ SECTION HEADER ------------ -->
       <SharedSectionHeader>
          <div class="mx-auto max-w-screen-xl space-y-2.5 px-4 py-10 lg:px-20 lg:py-20 xl:space-y-4 xl:px-40.5 xl:py-30">
@@ -29,26 +29,26 @@
 
          <!-- RIGHT SIDE -->
          <div class="flex flex-wrap gap-2.5 px-4 py-7.5 lg:w-fit lg:gap-5 lg:py-15 lg:pl-15 lg:pr-0 xl:gap-7.5 xl:py-20 xl:pl-20">
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Quantity</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">
                   Over 1,000 articles on emerging tech trends and breakthroughs.
                </p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Variety</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">
                   Articles cover fields like AI, robotics, biotechnology, and more.
                </p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Frequency</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">Fresh content added daily to keep you up to date.</p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Authoritative</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">
                   Written by our team of tech experts and industry professionals.
@@ -75,22 +75,22 @@
 
          <!-- RIGHT SIDE -->
          <div class="flex flex-wrap gap-2.5 px-4 py-7.5 lg:w-fit lg:gap-5 lg:py-15 lg:pl-15 lg:pr-0 xl:gap-7.5 xl:py-20 xl:pl-20">
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Depth</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">500+ research articles for in-depth understanding.</p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Graphics</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">Visual aids and infographics to enhance comprehension.</p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Trends</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">Explore emerging trends in future technology research.</p>
             </SharedContentBox>
 
-            <SharedContentBox class="min-w-72 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
+            <SharedContentBox class="min-w-64 flex-1 basis-[40%] space-y-1 p-6 lg:space-y-4 lg:p-7.5 xl:space-y-5 xl:p-10">
                <h3 class="text-left font-inter font-medium !leading-normal -tracking-[3%] text-white text-lg lg:text-xl xl:text-2xl">Contributors</h3>
                <p class="text-left font-inter font-normal !leading-normal -tracking-[3%] text-grey/60 text-sm lg:text-base xl:text-lg">Contributions from tech researchers and academics.</p>
             </SharedContentBox>
