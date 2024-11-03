@@ -3,6 +3,7 @@
         <HomeMain />
         <HomeSectionFutureTech />
         <HomeSectionExamplePosts />
+        <HomeSectionResources />
     </div>
 </template>
 
