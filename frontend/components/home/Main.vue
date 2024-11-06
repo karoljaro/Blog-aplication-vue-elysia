@@ -12,14 +12,14 @@
                   <!-- -------------- TEXT DIV -------------- -->
 
                   <div class="space-y-3.5 text-left lg:space-y-5 xl:space-y-6">
-                     <p class="text-left font-kumbh-sans text-lg font-medium !leading-[120%] -tracking-[3%] text-dark/40 lg:text-[1.375rem] xl:text-3xl">Your Journey to Tomorrow Begins Here</p>
+                     <p id="sub-content" class="text-left font-kumbh-sans text-lg font-medium !leading-[120%] -tracking-[3%] text-dark/40 lg:text-[1.375rem] xl:text-3xl">Your Journey to Tomorrow Begins Here</p>
 
                      <div class="space-y-2.5 lg:space-y-3.5 xl:space-y-5">
-                        <h1 class="text-left font-kumbh-sans text-3xl font-medium !leading-[120%] -tracking-[3%] text-white lg:text-[3.438rem] xl:text-[4.375rem]">
+                        <h1 id="header" class="text-left font-kumbh-sans text-3xl font-medium !leading-[120%] -tracking-[3%] text-white lg:text-[3.438rem] xl:text-[4.375rem]">
                            Explore the Frontiers of Artificial Intelligence
                         </h1>
 
-                        <p class="text-left font-inter text-sm font-normal !leading-normal -tracking-[3%] text-grey/50 lg:text-base xl:text-lg">
+                        <p id="header-details" class="text-left font-inter text-sm font-normal !leading-normal -tracking-[3%] text-grey/50 lg:text-base xl:text-lg">
                            Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us on this visionary
                            expedition into the heart of AI.
                         </p>
@@ -137,6 +137,35 @@
 <script setup lang="ts">
 import Header from '../shared/Header.vue';
 import { FileClock, Boxes, UsersRound } from 'lucide-vue-next';
+
+const { $gsap } = useNuxtApp();
+let ctx: gsap.Context;
+onMounted(() => {
+   ctx = $gsap.context(() => {
+      const tl = $gsap.timeline();
+
+      tl.from('#header', {
+         y: -100,
+         opacity: 0,
+         duration: 1
+      })
+      tl.from('#header-details', {
+         y: -50,
+         opacity: 0,
+         duration: 0.8
+      })
+      tl.from('#sub-content', {
+         y: -50,
+         opacity: 0,
+         duration: 0.5
+      })
+   })
+})
+
+onUnmounted(() => {
+   ctx.revert();
+})
+
 
 type AvatarPhoto_TYPE = {
    photoSrc: string;
