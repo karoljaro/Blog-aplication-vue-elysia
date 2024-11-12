@@ -1,6 +1,6 @@
 <template>
    <section class="flex flex-col">
-      <Header />
+      
 
       <main class="mx-auto max-w-screen-xl">
          <!-- ------------ TOP MAIN -------------- -->
@@ -135,7 +135,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from '../shared/Header.vue';
 import { FileClock, Boxes, UsersRound } from 'lucide-vue-next';
 
 const { $gsap } = useNuxtApp();
