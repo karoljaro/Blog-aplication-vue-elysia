@@ -16,13 +16,13 @@
         "@prisma/client": "5.20.0",
         "consola": "^3.2.3",
         "elysia": "latest",
-        "tsx": "^4.19.1"
+        "tsx": "^4.19.2"
     },
     "devDependencies": {
         "bun-types": "latest",
         "prettier": "3.3.3",
         "prettier-plugin-prisma": "^5.0.0",
-        "prisma": "^5.21.1"
+        "prisma": "^5.22.0"
     },
     "module": "src/index.js",
     "type": "module",
