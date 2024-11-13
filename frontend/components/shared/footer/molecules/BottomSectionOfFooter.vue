@@ -1,19 +1,35 @@
 <template>
    <div class="bg-dark/08">
       <div class="flex flex-wrap gap-5 py-10 lg:gap-12.5 lg:py-15 xl:gap-20 xl:py-20">
-        <template v-for="navLink in data.slice(0, -1)" :key="navLink['title']">
+         <template v-for="navLink in data.slice(0, -1)" :key="navLink['title']">
             <SharedFooterAtomLinksList :links="navLink['links']" :title="navLink['title']" class="flex-1" />
-        </template>
-        <template v-for="navLinkBtn in data.slice(-1)" :key="navLinkBtn['title']">
+         </template>
+         <template v-for="navLinkBtn in data.slice(-1)" :key="navLinkBtn['title']">
             <SharedFooterAtomLinksListWithBtns :links="navLinkBtn['links']" :title="navLinkBtn['title']" class="flex-1" />
-        </template>
+         </template>
       </div>
 
-      <div></div>
+      <div class="border-t border-t-dark/15 py-6 flex flex-wrap gap-5 justify-between items-center">
+         <div class="flex items-center">
+            <p class="font-inter font-normal text-sm !leaidng-[130%] -tracking-[3%] text-left text-dark/40">Terms & Conditions</p>
+            <span class="h-full border-l border-l-dark/15 mx-2">|</span>
+            <p class="font-inter font-normal text-sm !leaidng-[130%] -tracking-[3%] text-left text-dark/40">Privacy Policy</p>
+         </div>
+
+         <div class="flex gap-3.5 flex-nowrap">
+            <Twitter :size="20" class="text-white" />
+            <Github :size="20" class="text-white" />
+            <Linkedin :size="20" class="text-white" />
+         </div>
+
+         <p class="font-inter font-normal text-sm !leaidng-[130%] -tracking-[3%] text-left text-dark/40">© 2024 FutureTech. All rights reserved</p>
+      </div>
    </div>
 </template>
 
 <script setup lang="ts">
+import { Twitter, Linkedin, Github } from 'lucide-vue-next';
+
 type DATA_TYPE = {
    title: string;
    links: {
