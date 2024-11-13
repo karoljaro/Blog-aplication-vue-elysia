@@ -7,7 +7,7 @@
       <ul class="flex-col space-y-2 lg:space-y-3 xl:space-y-[1.125rem]">
          <template v-for="link in links" :key="link['id']">
             <li class="list-none">
-               <NuxtLink class="text-left font-inter text-sm font-normal !leading-[130%] -tracking-[3%] text-dark/40 xl:text-lg text-nowrap" :to="link['link']">{{ link['name'] }}</NuxtLink>
+               <NuxtLink class="text-left hover:text-dark/35 font-inter text-sm font-normal !leading-[130%] -tracking-[3%] text-dark/40 xl:text-lg text-nowrap" :to="link['link']">{{ link['name'] }}</NuxtLink>
             </li>
          </template>
       </ul>
