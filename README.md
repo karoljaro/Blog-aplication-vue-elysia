@@ -5,6 +5,13 @@
 ## Project Description
 **Blog Application** is an advanced blogging platform built with Nuxt 3 and TypeScript, designed to provide a dynamic and scalable solution for content management. The project uses Elysia.js for the backend, Prisma as the ORM, Tailwind CSS for styling, Vitest for testing, and is powered by Bun.js. Additionally, the project is integrated with Docker, making deployment and management easier.
 
+> [!Note]
+> The application is under development.
+
+> [!Important]
+> For full functionality of the application, you need a docker where the API will be stored.
+
+
 ## UI Link
 You can access the user interface here: [Blog Application UI](https://www.figma.com/design/dQGNXRodRq0ujCAGPFjNt0/AI-Blog-Website-UI-Template---Dark-Theme-%7C-Produce-UI-(Community)?node-id=18-400&node-type=frame&t=CjICjX841xZqDQIo-0)
 
