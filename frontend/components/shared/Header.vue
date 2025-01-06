@@ -54,7 +54,7 @@ const navLinks: Array<LINK_TYPE> = [
    {
       id: 2,
       name: CurrentRoute['news'],
-      link: '/News'
+      link: '/'
    }
 ];
 </script>
